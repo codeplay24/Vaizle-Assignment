@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync')();
 const date = require('date-and-time')
 
-const main = (dateDict)=>{
+const solution = (dateDict)=>{
   const dateDict1 = {
     "Mon":null,
     "Tue":null,
@@ -166,5 +166,5 @@ const main = (dateDict)=>{
 }
 
 module.exports = {
-  main
+  solution
 }

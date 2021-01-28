@@ -1,4 +1,4 @@
-const {main} = require('../app.js')
+const {solution} = require('../app.js')
 
 test('test1', ()=>{
   const data = {
@@ -11,7 +11,7 @@ test('test1', ()=>{
     '2020-01-07':2,
     '2020-01-08':-2
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': -6,
     'Tue': 2,
@@ -36,7 +36,7 @@ test('test2', ()=>{
     '2020-01-06':2,
     '2020-01-07':4
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': 2,
     'Tue': 4,
@@ -67,7 +67,7 @@ test('test3', ()=>{
     'Sat': 5.111111111111111,
     'Sun': 12
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   for(key in map){
     if(map[key]!==ansDict[key]){
       throw new Error('test case failed')
@@ -86,7 +86,7 @@ test('test4', ()=>{
     '2020-02-09':2,
     '2020-02-15':12
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': 6,
     'Tue': 26,
@@ -114,7 +114,7 @@ test('test5', ()=>{
     '2018-01-07':23,
     '2015-10-08':12
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': 17,
     'Tue': 220,
@@ -143,7 +143,7 @@ test('test6', ()=>{
     '2020-11-07':27,
     '2020-07-08':23
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
 
   const map = {
     'Mon': 4,
@@ -189,7 +189,7 @@ test('test7', ()=>{
     '2020-01-05':2,
     '2020-01-06':-6
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
 
   const map = {
     'Mon': 116,
@@ -226,7 +226,7 @@ test('test8', ()=>{
     '2020-12-06':32,
     '2020-12-07':44
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': 48,
     'Tue': 242,
@@ -263,7 +263,7 @@ test('test9', ()=>{
     '2020-06-19':771,
     '2020-11-07':27
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': 48,
     'Tue': 226,
@@ -296,7 +296,7 @@ test('test10', ()=>{
     '2020-02-23':45,
     '2020-02-24':46
   }
-  const ansDict = main(data)
+  const ansDict = solution(data)
   const map = {
     'Mon': 94,
     'Tue': 226,
