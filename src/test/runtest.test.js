@@ -12,7 +12,20 @@ test('test1', ()=>{
     '2020-01-08':-2
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': -6,
+    'Tue': 2,
+    'Wed': 2,
+    'Thu': 4,
+    'Fri': 6,
+    'Sat': 8,
+    'Sun': 2
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test2', ()=>{
@@ -24,16 +37,42 @@ test('test2', ()=>{
     '2020-01-07':4
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': 2,
+    'Tue': 4,
+    'Wed': 6,
+    'Thu': 8,
+    'Fri': 10,
+    'Sat': 12,
+    'Sun': 14
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test3', ()=>{
   const data = {
-    '2020-02-02':32,
-    '2020-02-03':64
+    '2020-02-02':12,
+    '2020-02-03':4
+  }
+  const map = {
+    'Mon': 4,
+    'Tue': 5.333333333333333,
+    'Wed': 6.666666666666667,
+    'Thu': 8,
+    'Fri': 9.333333333333334,
+    'Sat': 5.111111111111111,
+    'Sun': 12
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test4', ()=>{
@@ -48,7 +87,20 @@ test('test4', ()=>{
     '2020-02-15':12
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': 6,
+    'Tue': 26,
+    'Wed': 6,
+    'Thu': 43.5,
+    'Fri': 81,
+    'Sat': 12,
+    'Sun': 6
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test5', ()=>{
@@ -63,7 +115,21 @@ test('test5', ()=>{
     '2015-10-08':12
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': 17,
+    'Tue': 220,
+    'Wed': 116,
+    'Thu': 12,
+    'Fri': 6,
+    'Sat': 165,
+    'Sun': 24
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
+
 })
 
 test('test6', ()=>{
@@ -78,7 +144,21 @@ test('test6', ()=>{
     '2020-07-08':23
   }
   const ansDict = main(data)
-  console.log(ansDict);
+
+  const map = {
+    'Mon': 4,
+    'Tue': 6,
+    'Wed': 23,
+    'Thu': 22,
+    'Fri': 771,
+    'Sat': 111,
+    'Sun': 4
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test7', ()=>{
@@ -110,7 +190,21 @@ test('test7', ()=>{
     '2020-01-06':-6
   }
   const ansDict = main(data)
-  console.log(ansDict);
+
+  const map = {
+    'Mon': 116,
+    'Tue': 242,
+    'Wed': 23,
+    'Thu': 124,
+    'Fri': 846,
+    'Sat': 226,
+    'Sun': 128
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test8', ()=>{
@@ -133,7 +227,20 @@ test('test8', ()=>{
     '2020-12-07':44
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': 48,
+    'Tue': 242,
+    'Wed': 23,
+    'Thu': 22,
+    'Fri': 840,
+    'Sat': 276,
+    'Sun': 51
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test9', ()=>{
@@ -157,7 +264,20 @@ test('test9', ()=>{
     '2020-11-07':27
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': 48,
+    'Tue': 226,
+    'Wed': 23,
+    'Thu': 22,
+    'Fri': 771,
+    'Sat': 276,
+    'Sun': 32
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
 
 test('test10', ()=>{
@@ -177,5 +297,18 @@ test('test10', ()=>{
     '2020-02-24':46
   }
   const ansDict = main(data)
-  console.log(ansDict);
+  const map = {
+    'Mon': 94,
+    'Tue': 226,
+    'Wed': 173.66666666666666,
+    'Thu': 121.33333333333333,
+    'Fri': 69,
+    'Sat': 165,
+    'Sun': 96
+  }
+  for(key in map){
+    if(map[key]!==ansDict[key]){
+      throw new Error('test case failed')
+    }
+  }
 })
